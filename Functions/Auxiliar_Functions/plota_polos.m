@@ -1,10 +1,10 @@
 function [] = plota_polos(A,teta,maximo,minimo,precisao,color)             
 
-%Valor Mínimo e Máximo do Parâmetro variável
+%Valor Mï¿½nimo e Mï¿½ximo do Parï¿½metro variï¿½vel
 % The plotting is performed throught the discretization of the scheduling
 % parameter
  hold on;
- 
+%  figure
  for Parm=minimo:precisao:maximo,
      assign(teta,Parm);
      poles = roots(double(A));
